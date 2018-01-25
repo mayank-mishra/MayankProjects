@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_background"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" >
+
+        <CheckBox
+            android:id="@+id/check_product"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/txt_pname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical"
+            android:text="Product Name"
+            android:textColor="@color/status_bar_color" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/colorAccent" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="110dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="0dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/txt_pamount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:text="12,000"
+                android:textColor="@color/text_color_big"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edit_amount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="price"
+                android:inputType="number"
+                android:text=""
+                android:textColor="@color/text_color_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/edit_qty"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="qty"
+                android:inputType="number"
+                android:text=""
+                android:textColor="@color/text_color_small" />
+
+            <EditText
+                android:id="@+id/edit_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="price"
+                android:inputType="number"
+                android:text=""
+                android:textColor="@color/text_color_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:visibility="visible" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

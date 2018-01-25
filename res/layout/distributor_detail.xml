@@ -1,0 +1,177 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_dis_name"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="#8D2990"
+            android:gravity="center"
+            android:text="Thirmurthy Seeds &amp; Pesticides"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="#333333"
+            android:gravity="center"
+            android:text="Contact Information"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="TIN NO"
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="0.2dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:background="#B3B3B3" />
+
+                <TextView
+                    android:id="@+id/txt_dis_tinno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="UTX123456"
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="Contact Person"
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:background="#B3B3B3" />
+
+                <TextView
+                    android:id="@+id/txt_dis_contact_person"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Thrimurthy"
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="Address"
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:background="#B3B3B3" />
+
+                <TextView
+                    android:id="@+id/txt_dis_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="1.2dp"
+                    android:maxLines="6"
+                    android:text="B -609, B Block,The Platina,Gachibowli,Hyderabad -5000032"
+                    android:textColor="#333333"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="Contact"
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:background="#B3B3B3" />
+
+                <TextView
+                    android:id="@+id/txt_dis_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="+91 040667703008"
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom" >
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#8D2990"
+                android:gravity="center"
+                android:text="View Orders"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
